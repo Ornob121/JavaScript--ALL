@@ -1,0 +1,14 @@
+var numbers = [20, 30, 54, 87, 56, 77, 88];
+console.log(numbers.length);
+console.log(numbers.indexOf(77));
+console.log(numbers[3]);
+numbers[4] = 656;
+console.log(numbers);
+numbers.push(4545);
+console.log(numbers);
+numbers.pop();
+console.log(numbers);
+numbers.unshift(99);
+console.log(numbers);
+numbers.shift();
+console.log(numbers);
