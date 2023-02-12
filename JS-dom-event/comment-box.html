@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Comment-Box</title>
+</head>
+
+<body>
+    <section id="comment-section">
+        <h1>This is where I will create comment section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iure voluptates deserunt nemo asperiores
+            dignissimos nobis reiciendis suscipit quia assumenda.</p>
+        <p>Fugit ullam, recusandae culpa illum asperiores iure officiis ipsa minus veniam ut, quam consequuntur maxime
+            ex architecto cupiditate, quos illo?</p>
+        <p>Nulla, fugiat. Delectus deleniti cumque sequi omnis, atque dolores est id consequatur repudiandae quis autem
+            voluptatibus dolore! Autem, labore aliquam.</p>
+        <p>Eveniet, blanditiis repellat. Excepturi repellat sint doloribus modi nesciunt, cum nostrum consequatur
+            voluptatibus fugit atque, harum soluta dolor. Necessitatibus, ut.</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <textarea name="" id="new-comment" cols="70" rows="6"></textarea>
+    <br>
+    <br>
+    <button id="post">Post</button>
+
+
+
+
+    <script>
+        document.getElementById('post').addEventListener('click', function () {
+            const newComment = document.getElementById('new-comment').value;
+
+
+            const newElement = document.createElement('p');
+            newElement.innerText = newComment;
+
+            document.getElementById('comment-section').appendChild(newElement);
+        })
+    </script>
+</body>
+
+</html>
