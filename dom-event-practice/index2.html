@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <section class="bg-sky-300 w-3/4 mt-10 mx-auto">
+        <h1 class="text-3xl text-center py-5">My Text Editor</h1>
+        <div class="border-black border">
+            <div class="grid grid-cols-3 pb-5 ">
+                <div class="flex justify-center gap-7">
+                    <button id="bold">Bold</button>
+                    <button id="italic">Italic</button>
+                    <button id="underline">UnderLine</button>
+                </div>
+                <div class="flex justify-center gap-7" <button id="left">Left</button>
+                    <button id="center">Center</button>
+                    <button id="right">Right</button>
+                    <button id="margin">Mx-Auto</button>
+                </div>
+                <div>
+                    <button class=" flex justify-center gap-7 ml-32"> <input type="color" id="colorpicker" value="#0000ff"></button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="pt-3">
+                <textarea  class="ml-4" name="" id="input-text" cols="150" rows="15"></textarea>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="another.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Billionaire Diary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="mt-5 mx-5 d-flex align-items-center justify-content-between">
+        <div>
+            <input id="search-box" class="border border-dark border-top-0 border-start-0 border-end-0 border-2 fs-4" type="text" placeholder="Search">
+        </div>
+        <div>
+            <h2>Billionaire</h2>
+        </div>
+    </header>
+
+    <main>
+        <h3 class="text-center pt-5 mt-5">Richest By Industry</h3>
+        <section>
+            <div id="first-10-container" class="card mb-3" style="max-width: 540px;">
+              </div>
+        </section>
+        <section>
+          <div id="show-all-container" class="row row-cols-1 row-cols-md-3 g-4">
+          </div>
+        </section>
+        <div style="height: 200px;" class="mx-auto w-75 d-flex justify-content-center align-items-center">
+          <button id="show-all-btn" class="btn btn-primary d-none">Show All</button>
+        </div>
+
+        <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <section id="spinner-section" class="w-75 mx-auto mt-5 pt-5 d-none">
+          <div  style="height: 200px;"  class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span class="visually-hidden">Loading...</span>
+            </button>
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </div>
+        </section>
+    </main>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

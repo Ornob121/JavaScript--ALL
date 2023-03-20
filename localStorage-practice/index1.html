@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: darkblue;
+            text-align: center;
+            border-radius: 50px;
+            width: 75%;
+            margin: 130px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="input-container"> 
+            <input id="name-field" style="padding: 10px 50px; border-radius: 10px; margin: 40px 0; font-size: 20px;" type="text" name="" placeholder="Your Name" required>
+            <button id="name-delete-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Delete Name</button>
+            <button id="name-send-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Send Name</button>
+        </div>
+        <div class="input-container"> 
+            <input id="email-field" style="padding: 10px 50px; border-radius: 10px; margin: 40px 0; font-size: 20px;" type="email" name="" id="" placeholder="Your Email" required>
+            <button id="email-delete-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Delete Email</button>
+            <button id="email-send-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Send Email</button>
+        </div>
+        <div class="input-container"> 
+            <input required id="message-field" style="padding: 10px 50px; font-size: 20px; border-radius: 10px; margin: 40px 0;" type="text" name="" id="" placeholder="Your Message">
+            <button id="message-delete-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Delete Message</button>
+            <button id="message-send-btn" style="padding: 10px 20px; background-color: crimson; border-radius: 10px;">Send Message</button>
+        </div>
+        <div style="padding-bottom: 50px; display: flex; justify-content: center; gap: 150px;">
+            <button id="all-send-btn" style="padding: 10px 20px; background-color: red; border-radius: 10px;">Send</button>
+            <button id="reset-btn" style="padding: 10px 20px; background-color: deepskyblue; border-radius: 10px;">Reset</button>
+        </div>
+    </div>
+
+    <script src="js/app1.js"></script>
+</body>
+</html>
